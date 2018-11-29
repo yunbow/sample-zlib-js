@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zlib.js Test (04:Upload file)</title>
+  <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/css/bootstrap-theme.min.css" />
+  <script type="text/javascript" src="../../lib/jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../lib/zlib/unzip.min.js"></script>
+  <script type="text/javascript" src="../../common/js/common.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">zlib.js Test (04:Upload file)</div>
+      <div class="panel-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+              <input class="hidden" type="file" id="import" />
+              <input class="btn btn-default" type="button" id="importCustom" value="import" />
+            </div>
+          </div>
+          <h4>
+            <ins>Input form</ins>
+          </h4>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="itemInput1">uploadFile1: </label>
+            <div class="col-sm-4">
+              <input class="hidden inputFile" type="file" id="uploadFile1" />
+              <input class="btn btn-default inputFileCustom" type="button" id="uploadFile1Custom" value="uploadFile1" />
+              <span class="fileStatus">not selected.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="uploadFile2">uploadFile2: </label>
+            <div class="col-sm-4">
+              <input class="hidden inputFile" type="file" id="uploadFile2" />
+              <input class="btn btn-default inputFileCustom" type="button" id="uploadFile2Custom" value="uploadFile2" />
+              <span class="fileStatus">not selected.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+              <input class="btn btn-default" type="button" id="outputButton" value="output" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="itemInput">Log: </label>
+            <div class="col-sm-10">
+              <textarea id="log" class="form-control" rows="10"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
