@@ -19,7 +19,7 @@
             var file = $(this).prop('files')[0];
             var fileName = file ? file.name : null;
             setInputFile(id, file, fileName);
-            $(this).replaceWith($(this).clone());
+            $(this).val('');
         });
 
         $('#outputButton').on('click', function () {
